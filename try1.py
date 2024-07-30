@@ -15,3 +15,8 @@ data = [("Rachna","Manager"),("Supriya","Intern1"),("Harshal","Intern2"),("X","I
 df = spark.createDataFrame(data,("NAME","DESIGNATION"))
 print('Printing Dataframe:')
 df.show()
+
+def harshal(a,b):
+        a=1
+        b=2
+        return a+b
