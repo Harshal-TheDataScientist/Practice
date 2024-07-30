@@ -10,7 +10,7 @@ spark = SparkSession.builder \
         .config("spark.python.worker.reuse", "true") \
         .getOrCreate()
 
-data = [("Rachna","Manager"),("Supriya","Intern1"),("Harshal","Intern2"),("X","Intern3"),("Y","Intern4"),("Y","Intern5")]
+data = [("Rachna","Manager"),("Supriya","Intern1"),("Harshal","Intern2"),("X","Intern3"),("Y","Intern4"),("Z","Intern5")]
 
 df = spark.createDataFrame(data,("NAME","DESIGNATION"))
 print('Printing Dataframe:')
