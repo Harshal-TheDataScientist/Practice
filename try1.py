@@ -14,4 +14,5 @@ spark = SparkSession.builder \
 data = [("Rachna","Manager"),("Supriya","Intern1"),("Harshal","Intern2"),("X","Intern3")]
 
 df = spark.createDataFrame(data,("NAME","DESIGNATION"))
+print('Printing Dataframe:')
 df.show()
