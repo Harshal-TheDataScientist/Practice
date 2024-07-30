@@ -1,5 +1,4 @@
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import *
 import os
 os.environ['PYSPARK_PYTHON'] = 'D:\pyspark_setup\python_nv\python.exe'
 
@@ -11,7 +10,7 @@ spark = SparkSession.builder \
         .config("spark.python.worker.reuse", "true") \
         .getOrCreate()
 
-data = [("Rachna","Manager"),("Supriya","Intern1"),("Harshal","Intern2"),("X","Intern3")]
+data = [("Rachna","Manager"),("Supriya","Intern1"),("Harshal","Intern2"),("X","Intern3"),("Y","Intern3")]
 
 df = spark.createDataFrame(data,("NAME","DESIGNATION"))
 print('Printing Dataframe:')
